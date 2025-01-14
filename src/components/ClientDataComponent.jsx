@@ -1,8 +1,11 @@
 import PropTypes from "prop-types";
 
 export const ClientDataComponent = ({ title, client }) => {
-  const { name: clientName, lastName, address } = client;
-  const { country, city, street, number } = address;
+  const {
+    name: clientName,
+    lastName,
+    address: { country, city, street, number },
+  } = client;
 
   return (
     <>
